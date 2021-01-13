@@ -1,0 +1,20 @@
+<div class="container">
+  <main>
+    <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputTitle">Title</label>
+          <input type="text" class="form-control" formControlName="title">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">Author</label>
+          <select id="inputState" class="form-control" (change)="onSelect($event)">
+            <option *ngFor="let data of authorList" [value]="data.id"> {{data.firstName}}</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+    
+  </main>
+</div>

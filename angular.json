@@ -24,9 +24,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -120,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "bookstore"
+  "defaultProject": "bookstore",
+  "cli": {
+    "analytics": "e5e5b16e-2967-46d9-acfc-366ff559907a"
+  }
 }
